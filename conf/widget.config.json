@@ -1,0 +1,5 @@
+{
+	"name": "LoadReadAction",
+	"friendlyName": "LoadReadAction",
+	"description": "Mx widget that reads URL parameters after the page is loaded and trigger a Microflow after that"
+}

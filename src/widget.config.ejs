@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="<%= NAME %>.widget.<%= NAME %>" needsEntityContext="true" xmlns="http://www.mendix.com/widget/1.0/">
+    <name><%= FRIENDLY_NAME %></name>
+    <description><%= WIDGET_DESC %></description>
+    <icon />
+    <properties>
+        <property key="ParamKeyAttr" type="attribute" >
+            <caption>Key Attribute</caption>
+            <category>Settings</category>
+            <description></description>
+            <attributeTypes>
+                <attributeType name="String" />
+            </attributeTypes>
+        </property>
+        <property key="ParamValueAttr" type="attribute" >
+            <caption>Value Attribute</caption>
+            <category>Settings</category>
+            <description></description>
+            <attributeTypes>
+                <attributeType name="String" />
+        </attributeTypes>
+        </property>
+        <property key="URLParamKeysActions" type="object" isList="true" required="false">
+            <caption>URL Params Keys</caption>
+            <category>Settings</category>
+            <description>URL parameters keys.</description>
+            <properties>
+               <property key="key" type="string">
+                    <caption>Key</caption>
+                    <category>Parameter Key</category>
+                    <description></description>
+                </property>
+                <property key="action" type="microflow" required="false">
+                    <caption>Microflow</caption>
+                    <category>Action</category>
+                    <description>Microflow to trigger with the value of the given URL parameter key.</description>
+                    <returnType type="Void" />
+                </property>
+            </properties>
+           </property>
+    </properties>
+</widget>
+
